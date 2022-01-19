@@ -158,5 +158,5 @@ SITE_ID = 1
 EMAIL_HOST = 'stmp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_HOST_USER = 'saisatwikmaddula@gmail.com'
-EMAIL_HOST_PASSWORD = 'Satwik@10'
+EMAIL_HOST_PASSWORD = ''
 EMAIL_USE_TLS = True
