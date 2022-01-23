@@ -48,15 +48,15 @@ def contact(request):
 
         admin_info = User.objects.get(is_superuser=True)
         admin_email = admin_info.email
-        send_mail(
-                email_subject,
-                message_body,
-                'saisatwikmaddula@gamil.com',
-                [admin_email],
-                fail_silently=False,
-            )
-        message.sucess(request, 'Thank you for contacting us. We will get back to you shortly')
-        return redirect('contact')
+        # send_mail(
+        #         email_subject,
+        #         message_body,
+        #         'saisatwikmaddula@gamil.com',
+        #         [admin_email],
+        #         fail_silently=False,
+        #     )
+        # message.sucess(request, 'Thank you for contacting us. We will get back to you shortly')
+        # return redirect('contact')
     return render(request, 'pages/contact.html')
 
 def services(request):
