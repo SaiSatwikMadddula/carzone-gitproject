@@ -55,8 +55,8 @@ def contact(request):
         #         [admin_email],
         #         fail_silently=False,
         #     )
-        # message.sucess(request, 'Thank you for contacting us. We will get back to you shortly')
-        # return redirect('contact')
+        messages.success(request, 'Thank you for contacting us. We will get back to you shortly')
+        return redirect('contact')
     return render(request, 'pages/contact.html')
 
 def services(request):
