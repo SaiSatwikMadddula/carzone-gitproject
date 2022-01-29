@@ -3,8 +3,10 @@ from django.contrib import messages
 from .models import Contact
 from django.core.mail import send_mail
 from django.contrib.auth.models import User
+from django.contrib.auth.decorators import login_required
 
 # Create your views here.
+@login_required(login_url= 'login')
 def inquiry(request):
     if request.method == 'POST':
         car_id = request.POST['car_id']
